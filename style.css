@@ -3,20 +3,14 @@ body  {
     background-color:;
 }
 
-h4{
-    
-}
 h3{
     background-color:tan;
     font-size: 18px;
     padding: ;
     margin-bottom: ;
 }
-h4{
 
-}
-
-/* ナビゲーションバーの配置と背景*/
+/* ナビゲーションバーの配置と背景 */
 .main-nav {
     display: flex;
     font-size: 1.25rem;
@@ -39,25 +33,11 @@ h4{
 }
 
 /* ナビゲーションバーの色 */
-.main-nav a {
+.wrapper a {
     color:aliceblue;
 }
-.main-nav a:hover {
+.wrapper a:hover {
     color: gray;
-}
-
-/* ログインボタンの調整 */
-.btn {
-    all: unset;
-    background-color:grey;
-    color:aliceblue;
-    padding: 8px 16px;
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 16px;
-    margin-bottom: 40px;
-    text-decoration: none;
-    display: inline-block;
 }
 
 /* 本日のTO DO */
@@ -67,22 +47,38 @@ h4{
 h1 {
     color: deepskyblue;
     font-size: 2rem;
-    margin-top: 30px;
-    margin-bottom: 18px;
-    margin-left: 30px;
-    margin-right: 50px;
+    margin: 30px 60px 30px 30px;
+}
+input {
+    width: 300px; 
+    margin: 40px 18px;
+}
+button {
+    width: 100px;
+    margin: 40px 18px;
 }
 
 /* TO DOの追加 */
-input {
-    margin-top: 18px;
-    width: 700px; 
+.do {
+    display: flex;
+    text-transform: uppercase;
+    list-style: none;
 }
-button {
-    margin-top: 18px;
-    width: 100px;
+.do li {
+    margin-right: 50px;
 }
 
+/*jsã®å‡¦ç†ã«å¯¾å¿œã—ãŸéƒ¨åˆ†*/
+.cotainer {
+border: solid 1px #ccc;
+padding: 16px;
+margin: 8px;
+}
+
+li > div {
+    border: solid 1px #ccc;
+    display: flex;
+    align-items: center;
 .do {
     display: flex;
     text-transform: uppercase;
