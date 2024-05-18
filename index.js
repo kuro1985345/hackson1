@@ -33,9 +33,14 @@ const onClickAdd = () =>{
 //ボタンが押された時の処理を記述
 document.getElementById("add-button").addEventListener("click",() => onClickAdd());
 
+//日付の取得
 
-const onClickAdd1 = () =>{
-    const textEl = document.getElementById("lgn");
-    const text = textEl.value;
-    textEl.value = "login済";
-};
+// 今日の日付を取得できるnew Dateを格納
+const today = new Date();
+
+// 年・月・日・曜日を取得
+const year = today.getFullYear();
+const month = today.getMonth() + 1;
+const date = today.getDate();
+const day = today.getDay();
+
