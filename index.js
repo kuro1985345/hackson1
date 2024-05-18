@@ -34,4 +34,10 @@ const onClickAdd = () =>{
 document.getElementById("add-button").addEventListener("click",() => onClickAdd());
 
 
-//日付
+const onClickAdd1 = () =>{
+    const textEl = document.getElementById("lgn");
+    const deleteTarget("lgn");
+    const p = document.createElement("p");
+    p.textContent = login済;
+    
+};
