@@ -23,8 +23,8 @@
             <ul class="main-nav">
                 <li><a href="#">home</a></li>
                 <li><a href="#">to do list</a></li>
-                <li><a href="#">calendar</a></li>
-                <li><a href="/.auth/login/github">Login</a></li>
+                <li><a href="calendar.html" target="_blank">calendar</a></li>
+                <li><a href="/.auth/login/github" class="btn">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -32,9 +32,13 @@
     <div>
     <dr class="to">
         <h1>本日のTO DO</h1>
-        <input type="text" placeholder="to doの追加">
-        <button>追加</button>
+        <input type="text" placeholder="to doの追加" id="add-text">
+        <button id="add-button">追加</button>
     </dr>
+    </div>
+    <div class="container">
+        <p>to do 一覧</p>
+        <ul id="task-list"></ul>
     </div>
 
     <div>
