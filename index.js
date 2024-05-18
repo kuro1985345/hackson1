@@ -36,8 +36,6 @@ document.getElementById("add-button").addEventListener("click",() => onClickAdd(
 
 const onClickAdd1 = () =>{
     const textEl = document.getElementById("lgn");
-    const deleteTarget("lgn");
-    const p = document.createElement("p");
-    p.textContent = login済;
-    
+    const text = textEl.value;
+    textEl.value = "login済";
 };
