@@ -6,8 +6,8 @@ body  {
 h3{
     background-color:tan;
     font-size: 18px;
-    padding: ;
-    margin-bottom: ;
+    /* padding: ;
+    margin-bottom: ; */
 }
 
 
@@ -110,4 +110,4 @@ li > div {
 }
 .do li {
     margin-right: 50px;
-}
+}}
