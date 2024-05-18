@@ -2,24 +2,24 @@
 body  {
     background-color:white;
 }
-h1{
+ h1{
     background-color: mediumpurple;     /*日本一性格の悪いto doアプリ*/
-    font-size: 18px;
-    /* padding: ; */
-    /* margin-bottom:; */
-}
-/* h4{
+     font-size: 18px; 
+     padding: ; 
+     margin-bottom:; 
+ } 
+ h4{
     
-} */
-h3{
+} 
+ h3{
     background-color:tan;
-    font-size: 18px;
-    /* padding: ;
-    margin-bottom: ; */
-}
-/* h4{
+    font-size: 18px; 
+     padding: ;
+    margin-bottom: ; 
+ } 
+ h4{
 
-} */
+} 
 
 .main-nav {
     display: flex;
@@ -61,6 +61,7 @@ margin: 8px;
 }
 
 li > div {
+    border: solid 1px #ccc;
     display: flex;
     align-items: center;
 }

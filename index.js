@@ -1,7 +1,7 @@
-const onClickadd = () =>{
+const onClickAdd = () =>{
     const textEl = document.getElementById("add-text");
     const text = textEl.value;
-    textEl= "";
+    textEl.value= "";
     const li = document.createElement("li");
     const div = document.createElement("div");
     const p = document.createElement("p");
@@ -22,4 +22,4 @@ const onClickadd = () =>{
     document.getElementById("task-list").appendChild(li);
 };
 
-document.getElementById("add-button").addEventListener("click",() => onClickadd());
+document.getElementById("add-button").addEventListener("click",() => onClickAdd());
