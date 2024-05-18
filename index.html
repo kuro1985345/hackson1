@@ -6,7 +6,6 @@
     <title>to do管理（性悪）</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
     <header class="page-header wrapper">
         <nav>
             <ul class="main-nav">
@@ -17,7 +16,12 @@
             </ul>
         </nav>
     </header>
+<body>
     <div class="to">
+        <h1>本日のTO DO</h1>
+
+    <a href="/.auth/login/github">Login</a>
+    <div>
         <p>本日のto do</p>
         <input type="text" placeholder="to doの追加" id="add-text">
         <button id="add-button">追加</button>
@@ -30,9 +34,9 @@
 
     <div>
         <ul class="do">
-            <p>直近のto do</p>
-            <p>期限</p>
-            <p>重要度</p>
+            <li><p>直近のto do</p></li>
+            <li><p>期限</p></li>
+            <li><p>重要度</p></li>
         </ul>
     </div>
     <div><a id>calendar</a></div>
