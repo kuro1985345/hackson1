@@ -53,3 +53,14 @@ h4{
 .wrapper a:hover {
     color: #0bd;
 }
+
+.cotainer {
+border: solid 1px #ccc;
+padding: 16px;
+margin: 8px;
+}
+
+li > div {
+    display: flex;
+    align-items: center;
+}
