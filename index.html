@@ -24,21 +24,34 @@
                 <li><a href="#">home</a></li>
                 <li><a href="#">to do list</a></li>
                 <li><a href="#">calendar</a></li>
+                <li><a href="/.auth/login/github" class="btn">Login</a></li>
             </ul>
         </nav>
-        <a href="#" class="btn">ログイン</a>
     </header>
+<body>
+    <div class="to">
+        <h1>本日のTO DO</h1>
+
     <a href="/.auth/login/github">Login</a>
     <div>
         <p>本日のto do</p>
-        <input type="text" placeholder="to doの追加">
-        <button>追加</button>
+        <input type="text" placeholder="to doの追加" id="add-text">
+        <button id="add-button">追加</button>
     </div>
+
+    <div class="container">
+        <p>to do 一覧</p>
+        <ul id="task-list"></ul>
+    </div>
+
     <div>
-        <p>直近のto do</p>
-        <p>期限</p>
-        <p>重要度</p>
+        <ul class="do">
+            <li><p>直近のto do</p></li>
+            <li><p>期限</p></li>
+            <li><p>重要度</p></li>
+        </ul>
     </div>
     <div><a id>calendar</a></div>
+    <script src="index.js"></script>
 </body>
 </html>

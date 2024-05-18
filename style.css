@@ -1,13 +1,8 @@
 @charset  "UTF-8";
 body  {
-    background-color:white;
+    background-color:;
 }
-h1{
-    background-color: mediumpurple;     /*日本一性格の悪いto doアプリ*/
-    font-size: 18px;
-    padding: ;
-    margin-bottom:;
-}
+
 h4{
     
 }
@@ -21,11 +16,12 @@ h4{
 
 }
 
+/* ナビゲーションバーの配置と背景*/
 .main-nav {
     display: flex;
     font-size: 1.25rem;
     text-transform: uppercase;
-    margin-top: 34px;
+    margin-top: 50px;
     list-style: none;
 }
 .main-nav li {
@@ -38,7 +34,9 @@ h4{
     color:#0bd;
 }
 
+/*ページへの設定*/
 .page-header {
+    background-color:#7acbe1;
     display: flex;
     justify-content: space-between;
 }
@@ -47,9 +45,82 @@ h4{
     margin: 0 auto;
     padding: 0 4%;
 }
-.wrapper a {
-    color: #432;
+
+/* ナビゲーションバーの色 */
+.main-nav a {
+    color:aliceblue;
 }
 .wrapper a:hover {
     color: #0bd;
+}
+.btn{
+.main-nav a:hover {
+    color: gray;
+}
+
+/* ログインボタンの調整 */
+.btn {
+    all: unset;
+    background-color:grey;
+    color:aliceblue;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*本日のto do*/
+.to {
+    display: flex;
+}
+h1 {
+    color: deepskyblue;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+/*To Doの追加*/
+.do {
+    display: flex;
+    text-transform: uppercase;
+    list-style: none;
+}
+.do li {
+    margin-right: 50px;
+}
+
+/* TO DOの追加 */
+input {
+    margin-top: 18px;
+    width: 700px; 
+}
+button {
+    margin-top: 18px;
+    width: 100px;
+}
+
+/*jsの処理に対応した部分*/
+.cotainer {
+border: solid 1px #ccc;
+padding: 16px;
+margin: 8px;
+}
+
+li > div {
+    border: solid 1px #ccc;
+    display: flex;
+    align-items: center;
+.do {
+    display: flex;
+    text-transform: uppercase;
+    list-style: none;
+}
+.do li {
+    margin-right: 50px;
 }
