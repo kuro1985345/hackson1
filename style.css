@@ -21,6 +21,14 @@ h3{
 .main-nav li {
     margin-left: 36px;
 }
+.main-nav a {
+    color:#432;
+}
+.main-nav a:hover {
+    color:#0bd;
+}
+
+/*ページへの設定*/
 .page-header {
     background-color:#7acbe1;
     display: flex;
@@ -40,7 +48,7 @@ h3{
     color: gray;
 }
 
-/* 本日のTO DO */
+/*本日のto do*/
 .to {
     display: flex;
 }
