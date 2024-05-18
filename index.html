@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main>
+        <p>Loading content from the API: <b id ="name" >...</b></p>
+    </main>
+
+    <script>
+        (async function() {
+            const { text } = await( await fetch(`/api/HttpTrigger1/`)).json();
+            console.log(text);
+            document.querySelector('#name').textContent = text;
+        }());
+        </script>
     <header class="page-header wrapper">
         <nav>
             <ul class="main-nav">
