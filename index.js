@@ -2,7 +2,14 @@
 const onClickAdd = () =>{
     const textEl = document.getElementById("add-text");
     const text = textEl.value;
-    textEl.value= "";
+    textEl.value = "";
+
+    if(text === ""){
+        alert("何やってんだお前ええええ");
+        return;
+    }
+    
+
     //HTMLにタグを作って受け取ったテキストを表示
     const li = document.createElement("li");
     const div = document.createElement("div");
@@ -25,3 +32,6 @@ const onClickAdd = () =>{
 };
 //ボタンが押された時の処理を記述
 document.getElementById("add-button").addEventListener("click",() => onClickAdd());
+
+
+//日付
