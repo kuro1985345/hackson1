@@ -1,5 +1,5 @@
 const onClickadd = () =>{
-    const textEl = document.getElementById("");
+    const textEl = document.getElementById("add-text");
     const text = textEl.value;
     textEl= "";
     const li = document.createElement("li");
