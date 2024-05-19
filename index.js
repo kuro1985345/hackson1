@@ -11,7 +11,8 @@ const dayEl = document.getElementById("day");
 const days = dayEl.value
 const tooday ="　の期限は" + mon + "月" + days + "日" 
 const priorityEl = document.getElementById("priority");
-const prio = "　重要度は"　+ priorityEl + "です。"
+const priori = priorityEl.document
+const prio = "　重要度は" + priori  + "です。"
 // if(prio == 3){
 //    let i = "　重要度は高です。"
 // }else if(prio == 2){
@@ -21,10 +22,11 @@ const prio = "　重要度は"　+ priorityEl + "です。"
 // }
 
 
-//日付の取得（通常の時間）
-const today = new Date();
-const month = today.getMonth() + 1;
-const date = today.getDate();
+// //日付の取得（通常の時間）
+// const today = new Date();
+// const month = today.getMonth() + 1;
+// const date = today.getDate();
+// const today ="　の期限は" + month + "月" + date + "日"
 
 
 
@@ -37,25 +39,12 @@ const date = today.getDate();
 
     // }
 
-    // if(tooday <= today){
-    //     alert("ねぇ、なんでやらなかったの？");
-    //     function screen_lock(){
-    //         let lock_screen = document.createElement('div');
-    //         lock_screen.id = "screenLock";
-          
-    //         lock_screen.style.height = '100%';
-    //         lock_screen.style.left = '0px';
-    //         lock_screen.style.position = 'fixed';
-    //         lock_screen.style.top = '0px';
-    //         lock_screen.style.width = '100%';
-    //         lock_screen.style.zIndex = '9999';
-    //         lock_screen.style.opacity = '0';
-          
-    //         let objBody = document.getElementsByTagName("body").item(0);
-    //         objBody.appendChild(lock_screen);
-    //       }
-          
-
+    // if(tooday == today){
+    //     alert("ちゃんとやりなさいよ？さもないと…");
+    //     window.location.href = 'パス名'; // 通常の遷移
+    //     window.open('./letter of apology.html');
+    // }else{
+        
     // }
     
 
@@ -101,3 +90,24 @@ document.getElementById("add-button").addEventListener("click",() => onClickAdd(
 // const date = today.getDate();
 // const day = today.getDay();
 
+
+// function screen_lock(){
+//     let lock_screen = document.createElement('div');
+//     lock_screen.id = "screenLock";
+  
+//     lock_screen.style.height = '100%';
+//     lock_screen.style.left = '0px';
+//     lock_screen.style.position = 'fixed';
+//     lock_screen.style.top = '0px';
+//     lock_screen.style.width = '100%';
+//     lock_screen.style.zIndex = '9999';
+//     lock_screen.style.opacity = '0';
+  
+//     let objBody = document.getElementsByTagName("body").item(0);
+//     objBody.appendChild(lock_screen);
+//   }
+
+//   function screen_unlock(){
+// let screenLock = document.getElementById("screenLock");
+// screenLock.parentNode.removeChild(screenLock);
+// }

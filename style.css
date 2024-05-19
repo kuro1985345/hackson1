@@ -102,7 +102,7 @@ button {
 
 /*jsの処理に対応した部分*/
 .cotainer {
-border: solid 1px #ccc;
+border: solid 1px red;
 padding: 100px;
 margin: 50px;
 }
