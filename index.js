@@ -1,4 +1,4 @@
-//onXlickAdd関数を定義
+//onClickAdd関数を定義
 const onClickAdd = () =>{
     const textEl = document.getElementById("add-text");
     const text = textEl.value;

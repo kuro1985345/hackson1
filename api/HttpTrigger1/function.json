@@ -1,5 +1,5 @@
 {
-  "bindings": [
+"bindings": [
     {
       "authLevel": "anonymous",
       "type": "httpTrigger",
@@ -14,6 +14,21 @@
       "type": "http",
       "direction": "out",
       "name": "res"
-    }
+    },
+    {
+      "name": "postTodoItems",
+      "type": "sql",
+      "direction": "out",
+      "commandText": "dbo.TodoTable",
+      "connectionStringSetting": "SqlConnectionString"
+  },
+  {
+    "name": "getTodoItem",
+    "type": "sql",
+    "direction": "in",
+    "commandText": "select [Id], [title] from dbo.TodoTable",
+    "commandType": "Text",
+    "connectionStringSetting": "SqlConnectionString"
+}
   ]
 }
