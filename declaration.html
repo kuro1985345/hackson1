@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ここに宣言じゃ！</title>
+    <style>
+        body{
+            background-color: #6e0d0d;
+        }
+        textarea{
+            width: 500px;
+            height: 300px;
+            color: black;
+            background-color: #1bcf8a;
+            margin: 100px;
+
+        }
+    </style>
 </head>
 <body>
-    for
+    <form action="./declaration.js" method="post" name="today-declaration">
+        <textarea name="message" id="declaration">ここに宣言を書くのだ</textarea>
+        <button type="button" id="declaration" >送信</button>
+        
+    </form>
 </body>
 </html>

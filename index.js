@@ -42,8 +42,8 @@ const toooday ="　の期限は" + month + "月" + date + "日"
     // }
 
     if(tooday == toooday){
-        alert("ちゃんとやりなさいよ？さもないと…");
-        window.location.href = './declaration.html'; // 通常の遷移
+        alert("ちゃんとやらなかったらどうなるかわかってるよね？♡");
+        window.location.replace = './declaration.html'; // 通常の遷移
         window.open('./declaration.html');
     }else{
         
