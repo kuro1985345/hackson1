@@ -76,6 +76,14 @@ h3{
     margin-left: 30px;
     margin-right: 50px;
 }
+input {
+    width: 300px; 
+    margin: 40px 18px;
+}
+button {
+    width: 100px;
+    margin: 40px 18px;
+}
 
 /*To Doの追加*/
 .do {
