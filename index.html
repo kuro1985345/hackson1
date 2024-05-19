@@ -13,9 +13,10 @@
 
     <script>
         (async function() {
-            const { text } = await( await fetch(`/api/HttpTrigger1/`)).json();
-            console.log(text);
-            document.querySelector('#name').textContent = text;
+            const json = await( await fetch(`/api/HttpTrigger1/`)).json();
+            console.log("text", json[0].title);
+            const title = json[0].title
+            document.querySelector('#name').textContent = title;
         }());
         </script>
     <header class="page-header wrapper">
