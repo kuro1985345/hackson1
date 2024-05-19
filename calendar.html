@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang='en'>
-    <link rel="stylesheet" href="calender.css">
+    <link rel="stylesheet" href="calendar.css">
   <head>
     <meta charset='utf-8' />
     <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.11/index.global.min.js'></script>
@@ -10,7 +10,14 @@
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth'
+          initialView: 'dayGridMonth',
+          dayCellClassNames:function(arg){
+            if (arg.date.getDay() === 0){
+              return ["sunday"]
+            }else if (arg.date.getDay() === 6){
+              return ["saturday"]
+            }
+          }
         });
         calendar.render();
       });
