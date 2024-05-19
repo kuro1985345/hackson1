@@ -1,7 +1,7 @@
 @charset  "UTF-8";
 
 body  {
-    background-color: #ccc;
+    background-color: #FFFFFF;
 }
 
 h3{
@@ -15,19 +15,14 @@ h3{
 /* ナビゲーションバーの配置と背景*/
 .main-nav {
     display: flex;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     text-transform: uppercase;
     margin-top: 50px;
+    margin-bottom: 0cm;
     list-style: none;
 }
 .main-nav li {
     margin-left: 36px;
-}
-.main-nav a {
-    color:#432;
-}
-.main-nav a:hover {
-    color:#0bd;
 }
 
 /*ページへの設定*/
@@ -46,24 +41,15 @@ h3{
 .wrapper a {
     color:aliceblue;
 }
-
 .wrapper a:hover {
-    color: #0bd;
-}
-/* .btn{ */
-/* .main-nav a:hover {
->>>>>>> origin/HEAD
     color: gray;
-} */
+}
 
 /*本日のto do*/
-/* .to {
-    display: flex;
-} */
-.to h1 {
+h1 {
     color: deepskyblue;
-    font-size: 2rem;
-    margin: 30px 60px 30px 30px;
+    font-size: 2.25rem;
+    margin: 50px 0px 0px 200px;
 }
 input {
     width: 300px; 
@@ -87,12 +73,19 @@ button {
 /* TO DOの追加 */
 .add-todo{
     border: solid #0bd;
+    margin: 18px 200px;
+}
+
+
+p {
+    color: #0bd;
 }
 
 /*jsの処理に対応した部分*/
-.cotainer {
+.container {
 border: solid 1px #ccc;
 padding: 100px;
+padding-top: 18px;
 margin: 50px;
 }
 
