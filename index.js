@@ -10,8 +10,10 @@ const mon = monthEl.value
 const dayEl = document.getElementById("day");
 const days = dayEl.value
 const tooday ="　の期限は" + mon + "月" + days + "日" 
+// const posttoday = int(mon + days ) ;
+
 const priorityEl = document.getElementById("priority");
-const priori = priorityEl.document
+const priori = priorityEl
 const prio = "　重要度は" + priori  + "です。"
 // if(prio == 3){
 //    let i = "　重要度は高です。"
@@ -23,10 +25,10 @@ const prio = "　重要度は" + priori  + "です。"
 
 
 // //日付の取得（通常の時間）
-// const today = new Date();
-// const month = today.getMonth() + 1;
-// const date = today.getDate();
-// const today ="　の期限は" + month + "月" + date + "日"
+const today = new Date();
+const month = today.getMonth() + 1;
+const date = today.getDate();
+const toooday ="　の期限は" + month + "月" + date + "日"
 
 
 
@@ -39,13 +41,13 @@ const prio = "　重要度は" + priori  + "です。"
 
     // }
 
-    // if(tooday == today){
-    //     alert("ちゃんとやりなさいよ？さもないと…");
-    //     window.location.href = 'パス名'; // 通常の遷移
-    //     window.open('./letter of apology.html');
-    // }else{
+    if(tooday == toooday){
+        alert("ちゃんとやりなさいよ？さもないと…");
+        window.location.href = './declaration.html'; // 通常の遷移
+        window.open('./declaration.html');
+    }else{
         
-    // }
+    }
     
 
     //HTMLにタグを作って受け取ったテキストを表示
